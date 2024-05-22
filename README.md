@@ -1,8 +1,52 @@
-# React + Vite
+Raven Pay Crypto Trading Project
+Overview
+This project is a cryptocurrency trading application developed for Raven Pay using React and Vite. It displays real-time order books and recent trades for selected currency pairs. Users can filter and search through currency pairs, switch between different views (Order Book and Recent Trades), and select time periods for viewing bids and asks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Order Book and Recent Trades View: Toggle between order book and recent trades data.
+Currency Pair Selection: Dropdown menu to select cryptocurrency pairs with real-time search functionality.
+Segmented Control: Allows users to switch between different views and filter options.
+API Integration: Fetches real-time data from CryptoCompare API.
+Time Period Selection: Filter bids and asks over different time periods.
+Getting Started
+Prerequisites
+Node.js
+npm (Node Package Manager) or yarn
+Installation
+Clone the repository:
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+git clone https://github.com/yourusername/raven-pay-crypto-trading.git
+cd raven-pay-crypto-trading
+Install dependencies:
+
+Using npm:
+
+
+npm install
+Using yarn:
+
+
+yarn install
+Running the Application
+To start the development server, run:
+
+
+npm run dev
+or
+
+
+yarn dev
+Open your browser and navigate to http://localhost:5173 to view the application.
+
+Building for Production
+To build the application for production, run:
+
+
+npm run build
+or
+
+
+yarn build
+The output will be in the dist directory.
