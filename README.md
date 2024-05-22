@@ -17,7 +17,7 @@ Clone the repository:
 
 
 
-git clone https://github.com/yourusername/raven-pay-crypto-trading.git
+git clone https://github.com/nwabekeyi/raven-pay.git
 cd raven-pay-crypto-trading
 Install dependencies:
 
