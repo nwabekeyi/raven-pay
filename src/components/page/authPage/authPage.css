@@ -1,0 +1,51 @@
+.auth-screen {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    background-color: 20252B;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: #262932 2px solid,
+
+  }
+  
+  .auth-screen__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff
+  }
+  
+  .auth-screen__gravatar {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .auth-screen__repositories {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .auth-screen__repositories li {
+    margin-bottom: 10px;
+  }
+  
+  .auth-screen__repositories a {
+    color: #555C63;
+    text-decoration: none;
+  }
+  
+  .auth-screen__repositories a:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-screen__error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

@@ -1,13 +1,18 @@
 import './App.css'
+import AppRoutes from './routes.jsx';
+import { AvatarProvider } from './components/context/avatarContext';
+import { CurrencyProvider } from './components/context/currencyContext.jsx';
 
 function App() {
-
+  
   return (
     <>
-<h1 className="text-10xl  underline">
-      Hellllo world1i
-    </h1>
-        </>
+    <CurrencyProvider>
+    <AvatarProvider> 
+    <AppRoutes />
+    </AvatarProvider> 
+    </CurrencyProvider>
+    </>
   )
 }
 

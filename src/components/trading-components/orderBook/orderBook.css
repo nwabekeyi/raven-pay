@@ -1,0 +1,31 @@
+/* src/components/orderBookTable.css */
+.order-book {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #1C2127;
+    border: solid 1px #32383F;
+    border-radius: 10px;
+  }
+  
+
+.order-book__section {
+  margin-bottom: 20px;
+}
+
+.order-book__section h4 {
+  margin-bottom: 10px;
+}
+
+.order-book__section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.order-book__section ul li {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+}

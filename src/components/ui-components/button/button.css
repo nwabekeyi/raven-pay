@@ -1,0 +1,83 @@
+/* Common button styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:beige;
+}
+
+/* Buy button */
+.button--buy {
+  width: 171px;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #25C26E;
+  top: 16px;
+  left: 16px;
+  gap: 8px;
+}
+
+/* Sell button */
+.button--sell {
+  width: 171px;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #FF554A;
+  top: 16px;
+  left: 203px;
+  gap: 8px;
+}
+.button--auth {
+  width: 171px;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #555C63;
+  top: 16px;
+  left: 203px;
+  gap: 8px;
+}
+
+/* Buy BTC button */
+.button--buy-btc {
+  width: 239px;
+  height: 40px;
+  padding: 8px 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #483BEB 0%, #7847E1 47.92%, #DD568D 96.35%);
+  top: 332px;
+  left: 8px;
+  gap: 8px;
+}
+
+/* Deposit button */
+.button--deposit {
+  width: 80px;
+  height: 40px;
+  padding: 8px 0;
+  border-radius: 8px;
+  background: var(--Colors-Blue-blue-500, #2764FF);
+  top: 524px;
+  left: 8px;
+  gap: 8px;
+}
+
+/* Font family styles */
+.button--main {
+  font-family: 'Inter', sans-serif;
+}
+
+.button--secondary {
+  font-family: 'Satoshi', sans-serif;
+}
+
+
+
+

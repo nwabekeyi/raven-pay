@@ -1,0 +1,33 @@
+/* src/components/orderControl.css */
+.order-control {
+    background-color: #1C2127;
+    border: solid 1px #32383F;
+  }
+  
+  .segmented-control {
+    display: flex;
+    background-color: #2a2d34;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  
+  .button--segment {
+    background: none;
+    border: none;
+    color: #A7B1BC;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .button--segment:hover {
+    color: #ffffff;
+  }
+  
+  .button--active--order {
+    background-color: #1C2127;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  

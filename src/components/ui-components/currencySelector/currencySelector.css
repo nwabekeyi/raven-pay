@@ -1,0 +1,13 @@
+/* src/components/currencySelector/currencySelector.css */
+.currency-selector {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .currency-selector__label {
+    display: block;
+    margin-bottom: 10px;
+    color: #A7B1BC;
+    font-weight: bold;
+  }
+  

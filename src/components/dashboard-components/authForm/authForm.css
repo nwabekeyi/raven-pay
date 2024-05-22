@@ -1,0 +1,42 @@
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .auth-form button {
+    width: 100%;
+  }
+  
+  .auth-screen__title {
+    text-align: center;
+  }
+  
+  .auth-screen__gravatar {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+  }
+  
+  .auth-screen__repositories {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .auth-screen__repositories li {
+    margin-bottom: 10px;
+  }
+  
+  .auth-screen__repositories a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .auth-screen__repositories a:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-screen__error {
+    color: #ff0000;
+    text-align: center;
+  }
+  

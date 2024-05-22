@@ -1,0 +1,29 @@
+.segmented-control{
+  display: inline-flex;
+  background: #00000029;
+  width: auto;
+  padding: 1px;
+  border-radius: 8px;
+}
+  .button--active--buy {
+    border-radius: 8px;
+    border: 1px solid #25C26E;
+    background: #21262C;
+  }
+  .button--active--order {
+    border-radius: 8px;
+    border: 1px solid #21262C;
+    background: #21262C;
+  }
+
+  /* Segmented control button styles */
+  .button--segment {
+    width: 117.5px;
+    height: 28px;
+    padding: 8px;
+    box-shadow: 0px 3px 1px 0px #0000000A;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

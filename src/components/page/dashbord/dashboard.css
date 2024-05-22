@@ -1,0 +1,13 @@
+/* src/components/dashboard.css */
+.dashboard {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 5px;
+    padding: 10px;
+  }
+
+  #setcions{
+    background-color: #1C2127;
+    border: solid 1px #32383F;
+  
+  }
