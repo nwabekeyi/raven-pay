@@ -2,6 +2,9 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    border: solid #32383F 1px;
+    padding: 5px;
+    border-radius: 10%;
   }
   /* Dropdown toggle button */
   #dropdown__toggle--market {

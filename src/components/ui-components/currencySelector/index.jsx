@@ -11,7 +11,7 @@ const CurrencySelector = () => {
   return (
     <div className="currency-selector">
       <label className="currency-selector__label">Select Currency Pair:</label>
-      <Dropdown options={currencyPairs} onSelect={setCurrencyPair} />
+      <Dropdown options={currencyPairs} onSelect={setCurrencyPair} search />
     </div>
   );
 };

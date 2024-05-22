@@ -1,3 +1,9 @@
 .currency--info{
-    display: flex;
+    display: flex;    
+    justify-content: space-evenly;
+
+}
+
+.currency--info__small{
+    flex: 2;
 }

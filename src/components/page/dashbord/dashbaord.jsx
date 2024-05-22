@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <Navbar />
-      <CurrencyInfoPage />
+      <CurrencyInfoPage className= {{width:"100vw"}} />
       <ChartTable />
       <OrderControl />
     </div>

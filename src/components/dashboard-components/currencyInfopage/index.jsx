@@ -8,7 +8,7 @@ const CurrencyInfoPage = () => {
   return (
     <div className="currency--info">
       <CurrencySelector/>
-      <CurrencyInfo />
+      <CurrencyInfo className= "currency--info__small"/>
     </div>
   );
 };

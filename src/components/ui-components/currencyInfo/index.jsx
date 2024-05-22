@@ -11,8 +11,8 @@ const CurrencyInfo = () => {
   }
 
   return (
-    <div className="currency-info">
-      <h2 className="currency-info__heading">Currency Pair: {currencyPair}</h2>
+    <div className="currency-info" style={{width: '100%'}}>
+      <h2 className="currency-info__heading"> {currencyPair}</h2>
       <p className="currency-info__item">
         <span className="currency-info__label">Current Exchange Rate:</span>
         <span className="currency-info__value">{currencyData.PRICE}</span>

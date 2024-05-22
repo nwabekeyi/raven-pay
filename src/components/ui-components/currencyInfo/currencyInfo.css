@@ -5,8 +5,10 @@
     border-radius: 8px;
     color: #A7B1BC;
     max-width: 400px;
-    margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: stretch;
+    width: auto;
   }
   
   .currency-info__heading {

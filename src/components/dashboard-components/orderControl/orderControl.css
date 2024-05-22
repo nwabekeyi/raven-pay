@@ -30,4 +30,21 @@
     color: #ffffff;
     border-radius: 5px;
   }
-  
+
+  .order-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 150px;
+  }
+
+  .order-page__open{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .order-verify{
+   text-align: center;
+  }

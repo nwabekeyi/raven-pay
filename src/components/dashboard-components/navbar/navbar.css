@@ -5,6 +5,12 @@
     padding: 10px 20px;
     background-color: #1C2127;
     border: solid #32383F 1px;
+    justify-content: space-between;
+  }
+  .navbar__logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
   }
   
   /* Element: logo */
@@ -16,12 +22,12 @@
   .navbar__links {
     display: flex;
     list-style: none;
-    margin-left: auto; /* Align the links to the right */
+    margin-left: 100px; /* Align the links to the right */
   }
   
   /* Element: item */
   .navbar__item {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   
   /* Element: link */
@@ -34,5 +40,11 @@
   /* Modifier: link--active */
   .navbar__link--active {
     color: #ffffff;
+  }
+
+  .navbar__gravatar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
   }
   

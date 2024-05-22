@@ -22,12 +22,11 @@ const OrderControl = () => {
       />
 
       <div className='order-page'>
-         <h1>
+         <h1 className='order-page__open'>
          No Open Orders
          </h1>
-         <p>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Id pulvinar nullam sit imperdiet pulvinar.
+         <p className= "order-verify">
+        No placed order yet, kinldy place an order
          </p>
       </div>
     </div>

@@ -1,44 +1,58 @@
-import { useState } from 'react';
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs'; // Import arrow icons
+// src/components/dropdown/index.js
+import React, { useState, useEffect } from 'react';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import './dropdown.css';
 
-const Dropdown = ({ label, options, onSelect, market }) => {
+const Dropdown = ({ options, onSelect, search }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredOptions, setFilteredOptions] = useState(options);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+  useEffect(() => {
+    setFilteredOptions(
+      options.filter(option =>
+        option.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    );
+  }, [searchQuery, options]);
+
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
   };
 
   const handleOptionClick = (option) => {
     onSelect(option);
     setIsOpen(false);
+    setSearchQuery('');
   };
-
-  const buttonID = market ? "dropdown__toggle--market" : "dropdown__toggle--day";
 
   return (
     <div className="dropdown">
-      <button
-        id={buttonID}
-        className={`dropdown__toggle ${isOpen ? 'dropdown__toggle--open' : ''}`}
-        onClick={toggleDropdown}
-      >
-        {label}
-        {/* Use arrow icons */}
-        {isOpen ? <BsChevronUp size={10} className="dropdown__arrow" /> : <BsChevronDown size={10} className="dropdown__arrow" />}
+      <button className="dropdown__toggle" onClick={() => setIsOpen(!isOpen)}>
+        {searchQuery}
+        {isOpen ? <IoIosArrowUp color="white" /> : <IoIosArrowDown color="white" />}
       </button>
       {isOpen && (
-        <ul className="dropdown__menu">
-          {options.map((option, index) => (
-            <li
+        <div className="dropdown__menu">
+          {search && (
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearch}
+              className="dropdown__search"
+              placeholder="Search..."
+            />
+          )}
+          {filteredOptions.map((option, index) => (
+            <div
               key={index}
-              className="dropdown__menu-item"
+              className="dropdown__option"
               onClick={() => handleOptionClick(option)}
             >
               {option}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
